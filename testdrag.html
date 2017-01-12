@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>slideDown demo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="videocont">
+
+    <div id="innervid">
+
+        <h1>Video Training</h1>
+
+        <div id="player">
+
+           <div class="empty">
+               <div class="headline" id="headsearch">
+                    <button id="hideshow" class="togglebut"><span><img src="images/magnifying_glass.png"></span></button>
+               </div>
+            <div id="vidsearch" class="show">
+
+                    <h4>Search Videos</h4>
+                    <input type="text" name="fname">
+
+                <br>
+                <ul>
+                    <li>
+                        <p>Vid1</p>
+                    </li>
+                    <li>
+                        <p>Vid2</p>
+                    </li>
+                    <li>
+                        <p>Vid3</p>
+                    </li>
+                    <li>
+                        <p>Vid4</p>
+                    </li>
+                    <li>
+                        <p>Vid5</p>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+            <video width="620" height="440" controls>
+                <source src="images/FioriTutorial1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="empty">
+                <div class="headline" id="headkey">
+                    <button id="hideshow2" class="togglebut"><span><img src="images/key-xxl.png"></span></button>
+                    <button id="hideshow3" class="togglebut"><span><img src="images/copy_2.png"></span></button>
+                </div>
+                <div id="keysearch">
+                        <h4>Keyword Search</h4>
+                        <input type="text" name="fname">
+                        <br>
+                        <ul>
+                            <li>
+                                <p>0:21 Search for HTML in the searchbar...</p>
+                            </li>
+                            <li>
+                                <p>0:55 Copy the HTML from the listener...</p>
+                            </li>
+                            <li>
+                                <p>1:23 Follow the video to find the HTML input...</p>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="empty">
+                <div id="listener">
+                    <h4>Video Listener</h4>
+                    <p>The button tag defines a clickable button.Inside a button element you can put content, like text or images. This is the difference between this element and buttons created with the input element.<br>
+                        Tip: Always specify the type attribute for a button element. Different browsers use different default types for the button element.Browser Support. Element.
+                        button 	Yes 	Yes 	Yes 	Yes 	Yes 	Yes<br>Tips and Notes<br>Note: If you use the button element in an HTML form, different browsers may submit different values. Use input to create buttons in an HTML form.<br>
+                        Differences Between HTML 4.01 and HTML5 has the following new attributes: autofocus, form, formaction, formenctype, formmethod, formnovalidate, and formtarget.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#hideshow" ).click(function () {
+            $("#vidsearch").slideToggle("slow", function(){
+
+            });
+    });
+
+    $("#hideshow2" ).click(function () {
+        $("#keysearch").slideToggle("slow", function(){
+
+        });
+    });
+
+    $("#hideshow3" ).click(function () {
+        $("#listener").slideToggle("slow", function(){
+
+        });
+    });
+</script>
+
+</body>
+</html>

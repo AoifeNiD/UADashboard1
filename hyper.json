@@ -1,0 +1,86 @@
+{
+  "name": "My Profile",
+  "children": [
+    {
+      "name":  "All Staff",
+      "children": [
+        {"name":"Induction", "url":  "http://help.sap.com/saphelp_nw75/helpdata/en/55/632e5a2674454197c4518419f138dc/frameset.htm"},
+        {
+          "name":"Our System", "url": "http://help.sap.com/saphelp_nw75/helpdata/en/55/632e5a2674454197c4518419f138dc/frameset.htm",
+          "children": [
+            {"name": "Logon", "url": "http://help.sap.com/saphelp_nw75/helpdata/en/2e/20684dea0f4be590b6e5b2ccf5e79a/content.htm"},
+            {"name": "Accessibility", "url": "http://help.sap.com/saphelp_nw75/helpdata/en/bd/22bc9539704ccf880d6423c7c9ff83/content.htm"}
+          ]
+        }
+      ]
+    },{
+      "name": "Human Resources",
+      "children": [
+        {
+          "name": "Basics", "url": "http://help.sap.com/pcat_hcm",
+          "children": [
+            {"name": "Services for HR Renewal 1.0", "url": "https://websmp107.sap-ag.de/~sapidb/011000358700000259992014E"},
+            {"name": "Self-Service", "url": "http://help.sap.com/erp_mss_addon10/helpdata/en/c5/963832c8ce4bc4a4ae664020627afa/frameset.htm"},
+            {"name": "Admin Tools", "url": "http://help.sap.com/saphelp_ls200/helpdata/en/6a/7ff7b22ec9ef418252d28392c2dfc4/content.htm?frameset=/en/2e/c04d3c0773790ae10000000a11405a/frameset.htm&current_toc=/en/30/e63a3c24b4a00ae10000000a11402f/plain.htm&node_id=289&show_children=false"},
+            {
+              "name": "Training Management", "url": "http://help.sap.com/saphelp_ls200/helpdata/en/27/ec3a3c00b96951e10000000a11405a/content.htm?frameset=/en/30/e63a3c24b4a00ae10000000a11402f/frameset.htm&current_toc=/en/30/e63a3c24b4a00ae10000000a11402f/plain.htm&node_id=4&show_children=false",
+              "children": [
+                {"name": "Course Group Infotype", "url": "http://help.sap.com/saphelp_ls200/helpdata/en/67/86623c2d6a1e66e10000000a11402f/content.htm?frameset=/en/d2/b04e3c8ba91626e10000000a114084/frameset.htm&current_toc=/en/30/e63a3c24b4a00ae10000000a11402f/plain.htm&node_id=217"},
+                {"name": "Schedule Model", "url": "http://help.sap.com/saphelp_ls200/helpdata/en/de/70623c9b6a8e67e10000000a11402f/content.htm?frameset=/en/67/86623c2d6a1e66e10000000a11402f/frameset.htm&current_toc=/en/30/e63a3c24b4a00ae10000000a11402f/plain.htm&node_id=213"}
+              ]
+            }
+          ]
+        },
+        {"name": "Advanced", "url": "http://help.sap.com/cloud4hr?current=pcat_hcm&show_children=false",
+          "children": [
+            {"name": "Success Factors", "url": "http://help.sap.com/cloud4hr?current=pcat_hcm&show_children=false",
+              "children": [
+                {"name": "Onboarding", "url": "https://websmp102.sap-ag.de/~sapidb/012002523100007950332015E"}
+              ]
+            },
+            {"name": "Employee Central", "url": "http://help.sap.com/saphelpiis_cloud4hr/EN/SF_EC_SC_HRSR_en.pdf"}
+          ]
+        }
+      ]
+    },{
+      "name": "Administration",
+      "children": [
+          {"name": "Information Steward", "url": "http://help.sap.com/businessobject/product_guides/sboIS42/en/is_42_doc_map_en.pdf",
+          "children": [
+            {"name": "System Admin", "url": "http://help.sap.com/businessobject/product_guides/sboIS41/en/sbo411_is_admin_en.pdf"},
+            {"name": "Integration Development", "url": "http://help.sap.com/businessobject/product_guides/sboIS41/en/sbo411_is_integrate_en.pdf" },
+            {"name": "End User Info", "url": "http://help.sap.com/businessobject/product_guides/sboIS41/en/sbo411_is_user_en.pdf"},
+            {"name": "Forums", "url": "http://help.sap.com/disclaimer?site=http%3A//forums.sdn.sap.com/forum.jspa%3FforumID%3D305%26start%3D0"},
+            {
+              "name": "Security", "url": "http://help.sap.com/saphelp_stm10/helpdata/en/03/b1b53bbcf64992a05a72f054375926/frameset.htm",
+              "children": [
+                {"name": "Treasury and Risk Management", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/2a/5ba717cfdba044afd8b835a904f48c/frameset.htm"},
+                {"name": "General Security Classification", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/5a/2a9b3cce1b3c0ae10000000a114084/frameset.htm"}
+              ]
+            }
+          ]
+        },
+        {"name": "Personnel Administration", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/18/90ae399c1a6651e10000000a114084/frameset.htm",
+        "children": [
+          {"name": "Security", "url": "http://scn.sap.com/community/security"},
+          {
+            "name": "InfoSources Personnel Admin", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/4c/4be43741fcc372e10000009b38f842/frameset.htm",
+            "children": [
+              {"name": "Employee", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/86/6a865315b86359e10000000a174cb4/content.htm?frameset=/en/4c/4be43741fcc372e10000009b38f842/frameset.htm&current_toc=/en/5d/558853f65d3d58e10000000a174cb4/plain.htm&node_id=3"},
+              {
+                "name": "Personnel Actions", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/8c/6a865315b86359e10000000a174cb4/content.htm?frameset=/en/4c/4be43741fcc372e10000009b38f842/frameset.htm&current_toc=/en/5d/558853f65d3d58e10000000a174cb4/plain.htm&node_id=4",
+                "children": [
+                  {"name": "Employment Status", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/13/3c88537cb83d58e10000000a174cb4/content.htm"},
+                  {"name": "Action Reason", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/1a/ab885322f03d58e10000000a174cb4/content.htm"}
+                ]
+              },
+              {"name": "Payroll Area", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/1f/548853f65d3d58e10000000a174cb4/content.htm?frameset=/en/8c/6a865315b86359e10000000a174cb4/frameset.htm&current_toc=/en/5d/558853f65d3d58e10000000a174cb4/plain.htm&node_id=6"}
+            ]
+          },
+          {"name": "Characteristics Personnel Admin", "url": "http://help.sap.com/saphelp_nw70ehp1/helpdata/en/7d/dcdf371aac9f4ae10000009b38f8cf/frameset.htm"}
+        ]}
+      ]
+    }
+  ]
+}
+

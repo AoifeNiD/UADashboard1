@@ -1,0 +1,556 @@
+<!DOCTYPE html xmlns:xlink="http://www.w3.org/1999/xlink">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="popupjs.js" type="text/javascript"></script>
+    <script src="popup2.js" type="text/javascript"></script>
+    <script src="profilepop.js" type="text/javascript"></script>
+    <script src="popmember.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $( "#dragable" ).sortable();
+            $( "#dragable" ).disableSelection();
+        });
+    </script>
+    <title>Help Centre</title>
+    <style>
+        .node {
+            cursor: pointer;
+        }
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
+        .node text {
+            font: 10px sans-serif;
+            color: #fff;
+        }
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="top"></div>
+
+<!-- Popup Form -->
+<div id="abc">
+    <!-- Popup Div Starts Here -->
+    <div id="popupContact">
+        <form action="" id="form" method="post" name="form">
+        <img id="close" src="images/close.png" onclick ="div_hide()">
+        <h2>Sample document</h2>
+            <p>Definition and Usage<br>
+            The button tag defines a clickable button.<br>Inside a button element you can put content, like text or images. This is the difference between this element and buttons created with the input element.<br>
+            Tip: Always specify the type attribute for a button element. Different browsers use different default types for the button element.<br>Browser Support<br>Element<br>
+            button 	Yes 	Yes 	Yes 	Yes 	Yes 	Yes<br>Tips and Notes<br>Note: If you use the button element in an HTML form, different browsers may submit different values. Use input to create buttons in an HTML form.<br>
+            Differences Between HTML 4.01 and HTML5<br>HTML5 has the following new attributes: autofocus, form, formaction, formenctype, formmethod, formnovalidate, and formtarget.
+                The button tag defines a clickable button.<br>Inside a button element you can put content, like text or images. This is the difference between this element and buttons created with the input element.<br>
+                Tip: Always specify the type attribute for a button element. Different browsers use different default types for the button element.<br>Browser Support<br>Element<br>
+                button 	Yes 	Yes 	Yes 	Yes 	Yes 	Yes<br>Tips and Notes<br>Note: If you use the button element in an HTML form, different browsers may submit different values. Use input to create buttons in an HTML form.<br>
+                Differences Between HTML 4.01 and HTML5<br>HTML5 has the following new attributes: autofocus, form, formaction, formenctype, formmethod, formnovalidate, and formtarget.
+                The button tag defines a clickable button.<br>Inside a button element you can put content, like text or images. This is the difference between this element and buttons created with the input element.<br>
+                Tip: Always specify the type attribute for a button element. Different browsers use different default types for the button element.<br>Browser Support<br>Element<br>
+                button 	Yes 	Yes 	Yes 	Yes 	Yes 	Yes<br>Tips and Notes<br>Note: If you use the button element in an HTML form, different browsers may submit different values. Use input to create buttons in an HTML form.<br>
+                Differences Between HTML 4.01 and HTML5<br>HTML5 has the following new attributes: autofocus, form, formaction, formenctype, formmethod, formnovalidate, and formtarget.
+            </p>
+            </form>
+    </div>
+</div>
+    <!-- Popup Div Ends Here -->
+
+<!------------------------------------------------------------------------------------>
+    <!-- Popup Form2 -->
+    <div id="def">
+        <!-- Popup Div2 Starts Here -->
+        <div id="popupContact2">
+            <form action="" id="form2" method="post" name="form">
+                <img id="close2" src="images/close.png" onclick ="hide_div()">
+                <h2>Add a Tile Resource</h2>
+                <p>Add new Tile?</p>
+                <button>Yes</button>
+                <button>No</button>
+            </form>
+        </div>
+        </div>
+        <!-- Popup Div Ends Here -->
+
+<!------------------------------------------------------------------------------------>
+<!-- Popup Form3 -->
+<div id="ghi">
+    <!-- Popup Div2 Starts Here -->
+    <div id="popupContact3">
+        <form action="" id="form3" method="post" name="form">
+            <h1>My Profile</h1>
+            <hr>
+            <button>Logout</button>
+            <hr>
+            <a href="#dendronav" onclick ="hidedivprof()">My Groups</a>
+            <ul>
+                <li>
+                   All Staff
+                </li>
+                <li>
+                    Human Resources
+                </li>
+                <li>
+                   Administration
+                </li>
+            </ul>
+            <hr>
+            <button>Tool Settings</button>
+            <hr>
+            <button onclick ="hidedivprof()">Close</button>
+        </form>
+    </div>
+</div>
+<!-- Popup Div Ends Here -->
+
+<!------------------------------------------------------------------------------------>
+
+<!-- Popup Form4 -->
+<div id="jkl">
+    <!-- Popup Div2 Starts Here -->
+    <div id="popupContact4">
+        <form action="" id="form4" method="post" name="form">
+            <img id="close4" src="images/close.png" onclick ="hidedivmem()">
+            <h1>Request Membership</h1>
+            <hr>
+            <h3>My Groups</h3>
+            <ul>
+                <li>
+                    All Staff
+                </li>
+                <li>
+                    Human Resources
+                </li>
+                <li>
+                    Administration
+                </li>
+            </ul>
+            <hr>
+            <h3>All Groups</h3>
+            <ul>
+                <li>
+                    All Staff
+                </li>
+                <li>
+                    Administration
+                </li>
+                <li>
+                    Banking
+                </li>
+                <li>
+                    Credit Control
+                </li>
+                <li>
+                    ...
+                </li>
+            </ul>
+            <hr>
+            <button>Submit Request</button>
+        </form>
+    </div>
+</div>
+<!-- Popup Div Ends Here -->
+
+<!------------------------------------------------------------------------------------>
+
+<nav id="nav">
+    <ul>
+        <li>
+            <a id="popup3" onclick="showdivprof()">My Profile</a>
+        </li>
+        <li>
+        <a href="#">Notifications</a>
+    </li>
+        <h1>SAP Help Centre</h1>
+    </ul>
+</nav>
+<!------------------------------------------------------------------------------------>
+
+<div id="MainCont">
+    <h1>What kind of help do you need?</h1>
+    <div id="InnerCont">
+        <section id="no1">
+            <h2>First Aid</h2>
+            <a href="#TileCont">
+            <img src="images/first_aid.png">
+            </a>
+        </section>
+        <section id="no2">
+            <h2>Video Training</h2>
+            <a href="#videocont">
+            <img src="images/circle_play.png">
+            </a>
+        </section>
+        <section id="no3">
+            <h2>Learning Centre</h2>
+            <a href="#topden">
+            <img src="images/round-eye-frame-icon.png">
+            </a>
+        </section>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------------>
+<div id="TileCont">
+    <div id="innertile">
+            <h1>First Aid</h1>
+        <ul id="dragable">
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 1</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 2</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 3</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 4</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 5</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 6</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 7</button>
+                </section>
+            </li>
+            <li>
+                <section class="tile">
+                    <button id="popup" onclick="div_show()">Tile 8</button>
+                </section>
+            </li>
+            <li>
+                <section id="tile2">
+                    <button id="popup" onclick="show_div()">+ Add Tile</button>
+                </section>
+            </li>
+        </ul>
+</div>
+</div>
+
+
+<!------------------------------------------------------------------------------------>
+<div class="foot" id="vidtop">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+<!------------------------------------------------------------------------------------>
+<div id="videocont">
+    <div id="innervid">
+
+        <h1>Video Training</h1>
+
+        <div id="player">
+            <!------------------------------------------------------------------------------------>
+            <div class="empty">
+                <div class="headline" id="headsearch">
+                    <button id="hideshow" class="togglebut"><span><img src="images/magnifying_glass.png"></span></button>
+                </div>
+                <div id="vidsearch" class="show">
+                    <h4>Search Videos</h4>
+                    <input type="text" name="fname">
+
+                    <br>
+                    <ul>
+                        <li>
+                            <p>Vid1</p>
+                        </li>
+                        <li>
+                            <p>Vid2</p>
+                        </li>
+                        <li>
+                            <p>Vid3</p>
+                        </li>
+                        <li>
+                            <p>Vid4</p>
+                        </li>
+                        <li>
+                            <p>Vid5</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------>
+            <video width="620" height="440" controls>
+                <source src="images/FioriTutorial1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!------------------------------------------------------------------------------------>
+            <div class="empty">
+                <div class="headline" id="headkey">
+                    <button id="hideshow2" class="togglebut"><span><img src="images/key-xxl.png"></span></button>
+                    <button id="hideshow3" class="togglebut"><span><img src="images/copy_2.png"></span></button>
+                </div>
+
+                <div id="keysearch">
+                    <h4>Keyword Search</h4>
+                    <input type="text" name="fname">
+                    <br>
+                    <ul>
+                        <li>
+                            <p>0:21 Search for HTML in the searchbar...</p>
+                        </li>
+                        <li>
+                            <p>0:55 Copy the HTML from the listener...</p>
+                        </li>
+                        <li>
+                            <p>1:23 Follow the video to find the HTML input...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------>
+            <div class="empty">
+                <div id="listener">
+                    <h4>Video Listener</h4>
+                    <p>The button tag defines a clickable button.Inside a button element you can put content, like text or images. This is the difference between this element and buttons created with the input element.<br>
+                        Tip: Always specify the type attribute for a button element. Different browsers use different default types for the button element.Browser Support. Element.
+                        button 	Yes 	Yes 	Yes 	Yes 	Yes 	Yes<br>Tips and Notes<br>Note: If you use the button element in an HTML form, different browsers may submit different values. Use input to create buttons in an HTML form.<br>
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</div>
+</div>
+
+
+<!------------------------------------------------------------------------------------>
+<div class="foot" id="topden">
+    <a href="#top">Back to Top</a>
+</div>
+
+
+<!------------------------------------------------------------------------------------>
+<div id="Dendro">
+    <div id="dendronav">
+    <button type="button" onclick="showdivmem()">Request Group Membership</button>
+    <h1>Learning Centre</h1>
+    </div>
+
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script>
+
+        var margin = {top: 20, right: 120, bottom: 20, left: 120},
+                width = 1160 - margin.right - margin.left,
+                height = 500 - margin.top - margin.bottom;
+        var i = 0,
+                duration = 750,
+                root;
+        var tree = d3.layout.tree()
+                .size([height, width]);
+        var diagonal = d3.svg.diagonal()
+                .projection(function(d) { return [d.y, d.x]; });
+        var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.right + margin.left)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        d3.json("hyper.json", function(error, dendro) {
+            if (error) throw error;
+            root = dendro;
+            root.x0 = height / 2;
+            root.y0 = 0;
+            function collapse(d) {
+                if (d.children) {
+                    d._children = d.children;
+                    d._children.forEach(collapse);
+                    d.children = null;
+                }
+            }
+            root.children.forEach(collapse);
+            update(root);
+        });
+        d3.select(self.frameElement).style("height", "600px");
+        function update(source) {
+            // Compute the new tree layout.
+            var nodes = tree.nodes(root).reverse(),
+                    links = tree.links(nodes);
+            // Normalize for fixed-depth.
+            nodes.forEach(function(d) { d.y = d.depth * 180; });
+            // Update the nodes…
+            var node = svg.selectAll("g.node")
+                    .data(nodes, function(d) { return d.id || (d.id = ++i); });
+            // Enter any new nodes at the parent's previous position.
+            var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+                    .on("click", click)
+                    .on("mouseover", function(d) {
+                        var g = d3.select(this); // The node
+                        // The class is used to remove the additional text later
+                        var info = g.append('text')
+                                .classed('info', true)
+                                .attr('x', 20)
+                                .attr('y', 10)
+                                .text('Click text for link');
+                    })
+                    .on("mouseout", function() {
+                        // Remove the info text on mouse out.
+                        d3.select(this).select('text.info').remove();
+                    });
+            nodeEnter.append("circle")
+                    .attr("r", 1e-6)
+                    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            nodeEnter.append("a")
+                    .attr("xlink:href", function(d) { return d.url; })
+                    .attr("target", "showurl")
+                    .append("text")
+                    .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+                    .attr("dy", ".35em")
+                    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+                    .text(function(d) { return d.name; })
+                    .style("fill-opacity", 1e-6);
+            // Transition nodes to their new position.
+            var nodeUpdate = node.transition()
+                    .duration(duration)
+                    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+            nodeUpdate.select("circle")
+                    .attr("r", 4.5)
+                    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            nodeUpdate.select("text")
+                    .style("fill-opacity", 1);
+            // Transition exiting nodes to the parent's new position.
+            var nodeExit = node.exit().transition()
+                    .duration(duration)
+                    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+                    .remove();
+            nodeExit.select("circle")
+                    .attr("r", 1e-6);
+            nodeExit.select("text")
+                    .style("fill-opacity", 1e-6);
+            // Update the links…
+            var link = svg.selectAll("path.link")
+                    .data(links, function(d) { return d.target.id; });
+            // Enter any new links at the parent's previous position.
+            link.enter().insert("path", "g")
+                    .attr("class", "link")
+                    .attr("d", function(d) {
+                        var o = {x: source.x0, y: source.y0};
+                        return diagonal({source: o, target: o});
+                    });
+            // Transition links to their new position.
+            link.transition()
+                    .duration(duration)
+                    .attr("d", diagonal);
+            // Transition exiting nodes to the parent's new position.
+            link.exit().transition()
+                    .duration(duration)
+                    .attr("d", function(d) {
+                        var o = {x: source.x, y: source.y};
+                        return diagonal({source: o, target: o});
+                    })
+                    .remove();
+            // Stash the old positions for transition.
+            nodes.forEach(function(d) {
+                d.x0 = d.x;
+                d.y0 = d.y;
+            });
+        }
+        // Toggle children on click.
+        function click(d) {
+            if (d.children) {
+                d._children = d.children;
+                d.children = null;
+            } else {
+                d.children = d._children;
+                d._children = null;
+            }
+            update(d);
+        }
+    </script>
+</div>
+
+<!------------------------------------------------------------------------------------>
+<div id="displaycont">
+    <div id="displaytools">
+        <a href="#innertile" onclick="show_div()">Add Tile Resource</a>
+    </div>
+    <div id="display">
+        <iframe name="showurl"></iframe>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------->
+
+    <div class="foot">
+        <a href="#top">Back to Top</a>
+    </div>
+
+
+
+    <script>
+        $("#hideshow" ).click(function () {
+            $("#vidsearch").slideToggle("slow", function(){
+
+            });
+        });
+
+        $("#hideshow2" ).click(function () {
+            $("#keysearch").slideToggle("slow", function(){
+
+            });
+        });
+
+        $("#hideshow3" ).click(function () {
+            $("#listener").slideToggle("slow", function(){
+
+            });
+        });
+    </script>
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                document.getElementById("display").innerHTML = xhttp.responseText;
+            }
+        };
+        xhttp.open("GET", "ajax1.html", true);
+        xhttp.send();
+    }
+
+    function loadDoc2() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                document.getElementById("display").innerHTML = xhttp.responseText;
+            }
+        };
+        xhttp.open("GET", "ajax2.html", true);
+        xhttp.send();
+    }
+
+</script>
+</body>
+</html>
